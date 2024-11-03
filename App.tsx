@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <ImageBackground source={require('./oslo.jpg')} style={StyleSheet.absoluteFill} />
+      <Text>Select the city you want to explore!</Text>
       <StatusBar style="auto" />
     </View>
   );
